@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pertemuan 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo">Pemrograman Web 1</div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Me</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Pertemuan 4</h2>
+        <p><strong>MENAMPILKAN GAMBAR, SUARA DAN VIDEO</strong></p>
+      </section>
+
+      <section class="card">
+        <h3>Ringkasan Materi</h3>
+        <p>
+          Penampilan gambar dilakukan dengan tag &lt;img /&gt; yang dilengkapi
+          atribut seperti sumber file, ukuran, posisi, teks alternatif, dan
+          judul gambar, sehingga gambar dapat tampil rapi dan informatif. Selain
+          itu, dijelaskan pula penggunaan image map untuk membuat area tertentu
+          pada gambar menjadi interaktif dan dapat diklik sesuai koordinat yang
+          ditentukan.<br /><br />
+          Materi juga menjelaskan penyisipan suara dan video ke dalam halaman
+          web. Suara dapat ditampilkan menggunakan tag &lt;embed&gt; atau
+          &lt;bgsound&gt; dengan pengaturan seperti autoplay, loop, volume, dan
+          tampilan kontrol, meskipun tidak semua metode didukung oleh seluruh
+          browser. Untuk video, HTML menyediakan tag &lt;video&gt; yang
+          mendukung berbagai format seperti MP4, WebM, dan Ogg, serta dapat
+          dikombinasikan dengan JavaScript untuk mengontrol pemutaran dan ukuran
+          video secara interaktif. Selain itu, dibahas pula penggunaan favicon
+          sebagai ikon halaman web yang muncul di tab browser, sehingga tampilan
+          website terlihat lebih profesional dan mudah dikenali.
+        </p>
+        <h3>Contoh Aksi</h3>
+
+        <span>
+          <div class="contoh-html">
+            Contoh gambar:<br /><br />
+            &lt;img src="image/me.jpg" width="125" height="150" border="2"
+            alt="my picture" title="Taj'Mahal"&gt;<br /><br />
+            Contoh suara:<br /><br />
+            &lt;embed src="music/davesite.mp3" loop="true" autoplay="false"
+            width="145" height="60"&gt;&lt;/embed&gt;<br /><br />
+            Contoh video:<br /><br />
+            &lt;embed src="helloworld.swf" type="application/x-shockwave-flash"
+            width="200" height="200"&gt;
+          </div>
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Materi PDF</h3>
+        <iframe
+          src="../materi/pertemuan4.pdf"
+          width="100%"
+          height="500px"
+        ></iframe>
+      </section>
+
+      <section class="card">
+        <a class="btn" href="../materi/pertemuan4.pptx" download>
+          Download PPT
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - Media Pembelajaran</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

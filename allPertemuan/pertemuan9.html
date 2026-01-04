@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pertemuan 9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo">Pemrograman Web 1</div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Me</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Pertemuan 9</h2>
+        <p><strong>FRAME</strong></p>
+      </section>
+
+      <section class="card">
+        <h3>Ringkasan Materi</h3>
+        <p>
+          Frame dalam HTML digunakan untuk membagi tampilan layar browser
+          menjadi beberapa bagian berdasarkan baris (rows) dan kolom (cols).
+          Dengan menggunakan elemen &lt;frameset&gt; dan &lt;frame&gt;, satu
+          halaman web dapat menampilkan beberapa dokumen HTML secara bersamaan
+          dalam satu layar. Setiap frame dapat memuat file HTML yang berbeda,
+          sehingga memudahkan pengaturan tata letak seperti header, menu, konten
+          utama, dan footer. Pada halaman yang menggunakan frame, tag
+          &lt;body&gt; tidak digunakan karena sudah digantikan oleh
+          &lt;frameset&gt; sebagai pengatur utama tampilan.<br /><br />
+          Elemen &lt;frameset&gt; memiliki atribut rows dan cols yang berfungsi
+          untuk menentukan pembagian ukuran frame, baik dalam satuan piksel,
+          persentase, maupun ukuran relatif. Frame juga dapat dikombinasikan
+          secara bertingkat untuk membentuk layout yang lebih kompleks. Selain
+          itu, frame sering dipadukan dengan hyperlink menggunakan atribut
+          target agar halaman yang diklik dapat ditampilkan pada frame tertentu.
+          Meskipun frame kini jarang digunakan pada pengembangan web modern,
+          pemahaman konsep frame tetap penting sebagai dasar pengaturan layout
+          dan navigasi pada HTML generasi awal.
+        </p>
+        <h3>Contoh Penerapan Frame</h3>
+
+        <span>
+          <div class="contoh-html">
+            &lt;html&gt; <br />
+            &lt;head&gt; <br />
+            --- bagian head --- <br />
+            &lt;/head&gt;<br />
+            &lt;frameset&gt; <br />
+            --- bagian frame --- <br />
+            &lt;/frameset&gt;<br />
+            &lt;/html&gt;
+          </div>
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Materi PDF</h3>
+        <iframe
+          src="../materi/Pertemuan9.pdf"
+          width="100%"
+          height="500px"
+        ></iframe>
+      </section>
+
+      <section class="card">
+        <a class="btn" href="../materi/Pertemuan9.pptx" download>
+          Download PPT
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - Media Pembelajaran</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

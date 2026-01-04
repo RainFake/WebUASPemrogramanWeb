@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pertemuan 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo">Pemrograman Web 1</div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Me</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Pertemuan 7</h2>
+        <p><strong>TABLE</strong></p>
+      </section>
+
+      <section class="card">
+        <h3>Ringkasan Materi</h3>
+        <p>
+          Tabel tersusun atas baris dan kolom, di mana setiap pertemuan baris
+          dan kolom disebut sel. Struktur dasar tabel terdiri dari tag
+          &lt;table&gt; sebagai pembungkus utama, &lt;tr&gt; untuk baris,
+          &lt;td&gt; untuk sel data, dan &lt;th&gt; untuk header tabel. Beberapa
+          atribut penting pada tabel antara lain border untuk menampilkan garis
+          tabel, cellpadding untuk mengatur jarak isi sel dengan border, serta
+          cellspacing untuk mengatur jarak antar sel. Selain itu, tabel dapat
+          diberi judul menggunakan tag &lt;caption&gt; yang secara default
+          ditampilkan di bagian atas tengah tabel. <br /><br />
+          HTML juga menyediakan atribut pengaturan posisi dan penggabungan sel
+          untuk membuat tabel lebih fleksibel. Atribut align dan valign
+          digunakan untuk mengatur perataan horizontal dan vertikal isi tabel,
+          sedangkan colspan dan rowspan berfungsi untuk menggabungkan beberapa
+          kolom atau baris. Dengan kombinasi atribut tersebut, tabel dapat
+          digunakan tidak hanya untuk menampilkan data, tetapi juga untuk
+          mengatur layout halaman web secara sederhana. Contoh latihan pada
+          materi ini menunjukkan penerapan penggabungan baris dan kolom,
+          penyisipan gambar ke dalam sel tabel, serta pengaturan tabel agar
+          tampil rapi dan terstruktur di browser.
+        </p>
+        <h3>Contoh Penerapan Table</h3>
+
+        <span>
+          <div class="contoh-html">
+            &lt;html&gt; <br />
+            &lt;head&gt; <br />
+            &lt;title&gt;Belajar HTML Table&lt;/title&gt;<br />
+            &lt;/head&gt; <br />
+            &lt;body&gt; <br />
+            &lt;div align="center"&gt; <br />
+            &lt;table border="2" width="450"&gt; <br />
+            &lt;tr&gt; <br />
+            &lt;td colspan="3" bgcolor="#FF9900"&gt; Kolom 1,2 dan 3 dengan
+            colspan <br />
+            &lt;/td&gt; <br />
+            &lt;/tr&gt; <br />
+            &lt;tr&gt; <br />
+            &lt;td rowspan="2"&gt; Kolom 1A <br />
+            &lt;br&gt;+Kolom 1B (rowspan) <br />
+            &lt;/td&gt; <br />
+            &lt;td&gt;Kolom 2A <br />
+            &lt;/td&gt; <br />
+            &lt;td rowspan="2"&gt; Kolom 3A<br />
+            &lt;br&gt;+Kolom 3B (rowspan)<br />
+            &lt;/td&gt;<br />
+            &lt;/tr&gt; &lt;tr&gt;<br />
+            &lt;td width="100" height="137"&gt; <br />
+            &lt;img title="myPerform" src="perform4.gif" width="250"
+            height="250" alt="myPicture"&gt; <br />
+            &lt;/td&gt; <br />
+            &lt;/tr&gt; <br />
+            &lt;tr&gt;<br />
+            &lt;td&gt;Kolom 1C<br />
+            &lt;/td&gt; <br />
+            &lt;td&gt;Kolom 2C&lt;/td&gt; <br />
+            &lt;td&gt;Kolom 3C<br />
+            &lt;/td&gt; <br />
+            &lt;/tr&gt; &lt;/table&gt; <br />
+            &lt;/div&gt; <br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+          </div>
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Materi PDF</h3>
+        <iframe
+          src="../materi/Pertemuan7.pdf"
+          width="100%"
+          height="500px"
+        ></iframe>
+      </section>
+
+      <section class="card">
+        <a class="btn" href="../materi/Pertemuan7.pptx" download>
+          Download PPT
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - Media Pembelajaran</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

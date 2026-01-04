@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pertemuan 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo">Pemrograman Web 1</div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Me</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Pertemuan 10</h2>
+        <p><strong>IFRAME</strong></p>
+      </section>
+
+      <section class="card">
+        <h3>Ringkasan Materi</h3>
+        <p>
+          Iframe (Inline Frame) merupakan elemen HTML yang digunakan untuk
+          menampilkan atau menyematkan dokumen lain ke dalam sebuah halaman web
+          tanpa harus berpindah halaman. Dengan iframe, sebuah halaman dapat
+          memuat konten eksternal seperti halaman web lain, video, peta, atau
+          media interaktif langsung di dalam halaman yang sedang aktif. Tag
+          iframe ditulis dengan pasangan &lt;iframe&gt; dan &lt;/iframe&gt;,
+          dengan atribut utama src yang berfungsi menentukan alamat dokumen atau
+          konten yang akan ditampilkan. Jika browser tidak mendukung iframe,
+          maka teks atau elemen di dalam tag iframe akan ditampilkan sebagai
+          alternatif.<br /><br />
+          Iframe didukung oleh hampir semua browser modern seperti Google
+          Chrome, Mozilla Firefox, Safari, Opera, dan Internet Explorer.
+          Beberapa atribut iframe yang sering digunakan antara lain width dan
+          height untuk mengatur ukuran tampilan, frameborder untuk menentukan
+          ada atau tidaknya garis tepi, serta name yang memungkinkan iframe
+          menjadi target dari hyperlink. Pada HTML5, sebagian atribut lama
+          seperti align, scrolling, dan frameborder sudah tidak
+          direkomendasikan, sehingga pengaturan tampilan iframe lebih dianjurkan
+          menggunakan CSS. Dengan CSS, iframe dapat diatur secara fleksibel baik
+          dari sisi ukuran maupun tata letaknya di dalam halaman web.<br /><br />
+          Perbedaan utama antara FRAME dan IFRAME terletak pada cara
+          penggunaannya. FRAME membagi seluruh halaman browser menjadi beberapa
+          bagian dan menggunakan &lt;frameset&gt; tanpa &lt;body&gt;, sedangkan
+          IFRAME digunakan di dalam &lt;body&gt; dan hanya menyisipkan konten
+          tambahan di suatu bagian halaman. Karena lebih fleksibel dan sesuai
+          standar HTML modern, iframe lebih sering digunakan dalam pengembangan
+          web saat ini dibandingkan frame.
+        </p>
+        <h3>Contoh Penerapan Frame</h3>
+
+        <span>
+          <div class="contoh-html">
+            &lt;HTML&gt;<br />
+            &lt;HEAD&gt; <br />
+            &lt;TITLE&gt; New Document &lt;/TITLE&gt;<br />
+            &lt;/HEAD&gt; <br />
+            &lt;BODY&gt; <br />
+            &lt;h1&gt;Penggunaan IFRAME |
+            https://indarnirmala.wordpress.com/&lt;/h1&gt;<br />
+            &lt;iframe src="https://indarnirmala.wordpress.com" height="550px"
+            width="900px"&gt;&lt;/iframe&gt; <br />
+            &lt;/BODY&gt; <br />
+            &lt;/HTML&gt;
+          </div>
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Materi PDF</h3>
+        <iframe
+          src="../materi/Pertemuan10.pdf"
+          width="100%"
+          height="500px"
+        ></iframe>
+      </section>
+
+      <section class="card">
+        <a class="btn" href="../materi/Pertemuan10.pptx" download>
+          Download PPT
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - Media Pembelajaran</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

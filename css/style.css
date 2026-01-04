@@ -1,0 +1,302 @@
+/* Reset dan font */
+body {
+  margin: 0;
+  font-family: poppins, sans-serif;
+  background: #9a9a9a; /* abu-abu lembut, sedikit gelap */
+}
+
+/* Top header sticky */
+.top-header {
+  background: rgb(40, 40, 40);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: rgb(255, 255, 255);
+}
+
+.top-header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 575px;
+  background-image: url("../assets/hero.jpg"); /* GANTI GAMBAR DI SINI */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 900px;
+}
+
+.hero-text {
+  background: rgba(255, 255, 255, 0.745);
+  padding: 10px 12px;
+  max-width: 530px;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgb(37, 37, 37);
+  margin: 20px;
+}
+
+/* Sub-header */
+.sub-header {
+  padding: 20px 40px;
+  background-color: rgb(40, 40, 40);
+  text-align: center;
+}
+
+/* Nav container */
+.sub-header nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* BUTTON STYLE */
+.sub-header nav a {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #1a237e;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* HOVER EFFECT */
+.sub-header nav a:hover {
+  background: #ffffff;
+  color: #1a237e;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.6);
+}
+
+/* ACTIVE / KLIK */
+.sub-header nav a:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Konten tab */
+.tab-content {
+  opacity: 0; /* Mulai dari transparan */
+  max-height: 0; /* Untuk efek collapse */
+  overflow: hidden; /* Sembunyikan konten yang meluap */
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+/* Saat aktif */
+.tab-content.active {
+  opacity: 1;
+  max-height: 2000px; /* Sesuaikan dengan tinggi konten */
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Grid container untuk Programs / PDF */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive */
+  gap: 20px;
+}
+
+/* Card item */
+.card {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Thumbnail di atas */
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Judul materi */
+.card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px 0;
+  color: #1a237e;
+}
+
+/* Rangkuman / deskripsi */
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Contoh HTML pada tiap materi */
+.contoh-html {
+  text-align: left;
+  padding: 10px 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  font-family: monospace;
+  line-height: 1.6;
+}
+
+/* Tombol Download PPT */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #1a237e; /* biru */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: rgb(40, 40, 40);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Efek klik */
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card a.btn {
+  color: #ffffff;
+}
+
+.about-card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  margin-top: 40px;
+  height: 320px;
+}
+
+/* BAGIAN KIRI (HIJAU) */
+.about-left {
+  width: 55%;
+  background: linear-gradient(135deg, rgb(153, 153, 153), #363636);
+  color: #ffffff;
+  padding: 40px;
+}
+
+.about-left h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.about-left .role {
+  font-size: 14px;
+  margin: 10px 0 25px;
+  opacity: 0.9;
+}
+
+.about-left .info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.about-left .info li {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* ICON SOSIAL */
+.about-left .social span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  margin-right: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.about-left .social span:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+/* BAGIAN KANAN (FOTO) */
+.about-right {
+  width: 45%;
+  height: 100%;
+  background: #eeeeee;
+  overflow: hidden;
+}
+
+.about-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* RESPONSIVE (HP) */
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .about-right img {
+    height: 300px;
+  }
+}
