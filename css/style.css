@@ -2,7 +2,8 @@
 body {
   margin: 0;
   font-family: poppins, sans-serif;
-  background: #9a9a9a; /* abu-abu lembut, sedikit gelap */
+  background: rgb(40, 40, 40); /* abu-abu lembut, sedikit gelap */
+  overflow-x: hidden;
 }
 
 /* Top header sticky */
@@ -30,13 +31,15 @@ body {
 .hero {
   position: relative;
   height: 575px;
-  background-image: url("../assets/hero.jpg"); /* GANTI GAMBAR DI SINI */
+  background-image: url("../assets/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
-  padding-left: 900px;
+  justify-content: flex-end; /* dorong ke kanan secara aman */
+  padding: 0 40px; /* padding aman */
 }
 
 .hero-text {
@@ -211,7 +214,7 @@ footer {
 .about-card {
   display: flex;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   margin-top: 40px;
@@ -221,7 +224,7 @@ footer {
 /* BAGIAN KIRI (HIJAU) */
 .about-left {
   width: 55%;
-  background: linear-gradient(135deg, rgb(153, 153, 153), #363636);
+  background: linear-gradient(135deg, rgb(48, 68, 139), #363636);
   color: #ffffff;
   padding: 40px;
 }
@@ -283,6 +286,14 @@ footer {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+.tab-content {
+  display: block;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
 }
 
 /* RESPONSIVE (HP) */
@@ -356,5 +367,14 @@ footer {
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  footer {
+    visibility: hidden; /* sembunyikan footer di HP */
   }
 }
