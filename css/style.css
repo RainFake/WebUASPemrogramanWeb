@@ -289,15 +289,15 @@ footer {
 @media (max-width: 768px) {
   /* Hero section menyesuaikan ukuran */
   .hero {
-    height: 400px; /* tinggi lebih kecil untuk HP */
-    padding-left: 10px; /* mengurangi padding kiri */
+    height: 300px;
+    padding-left: 10px;
     padding-right: 10px;
-    background-position: top center; /* agar fokus gambar tetap terlihat */
+    background-position: top center;
   }
-  .hero .hero-text {
-    max-width: 70%; /* agar tidak keluar layar */
-    padding: 12px 20px;
-    font-size: 9px; /* font lebih kecil tapi masih terbaca */
+  .hero-text {
+    max-width: 90%; /* cukup satu aturan */
+    font-size: 14px;
+    padding: 10px;
   }
   .sub-header {
     padding: 14px 10px;
