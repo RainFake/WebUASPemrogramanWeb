@@ -287,16 +287,74 @@ footer {
 
 /* RESPONSIVE (HP) */
 @media (max-width: 768px) {
-  .about-card {
-    flex-direction: column;
+  /* Hero section menyesuaikan ukuran */
+  .hero {
+    height: 400px; /* tinggi lebih kecil untuk HP */
+    padding-left: 10px; /* mengurangi padding kiri */
+    padding-right: 10px;
+    background-position: top center; /* agar fokus gambar tetap terlihat */
+  }
+  .hero .hero-text {
+    max-width: 70%; /* agar tidak keluar layar */
+    padding: 12px 20px;
+    font-size: 9px; /* font lebih kecil tapi masih terbaca */
+  }
+  .sub-header {
+    padding: 14px 10px;
+    padding-bottom: 4px;
+  }
+  .sub-header nav a {
+    padding: 10px 14px;
+    font-size: 14px; /* font lebih kecil untuk tombol */
   }
 
-  .about-left,
+  .top-header .logo {
+    font-size: 10px; /* logo lebih kecil */
+  }
+  .top-header nav a {
+    margin-left: 10px;
+    font-size: 12px; /* link navigasi lebih kecil */
+  }
+  .hero-text {
+    max-width: 90%; /* agar tidak keluar layar */
+    padding: 8px 10px;
+    font-size: 14px; /* font lebih kecil tapi masih terbaca */
+  }
+
+  /* About section */
+  .about-left h2 {
+    font-size: 20px;
+  }
+
+  .about-left .role,
+  .about-left .info li {
+    font-size: 14px;
+  }
+
+  /* Container padding */
+  .container {
+    padding: 15px;
+  }
+  .about-card {
+    display: flex;
+    flex-direction: column; /* stack vertikal */
+    height: auto; /* biar tinggi menyesuaikan */
+  }
+  .about-left {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
   .about-right {
     width: 100%;
+    height: 33vh; /* sepertiga tinggi viewport */
   }
 
   .about-right img {
-    height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
